@@ -309,6 +309,8 @@ class VideoPlayerController extends ValueNotifier<VideoPlayerValue> {
           uri: dataSource,
         );
         break;
+      case DataSourceType.contentUri:
+        break;
     }
 
     if (videoPlayerOptions?.mixWithOthers != null) {
